@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: cheungkinwong/httpenv:latest
+          tags: cheungkinwong/httpenv:latest,cheungkinwong/httpenv:${{ github.sha }}
